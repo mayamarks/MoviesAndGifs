@@ -67,6 +67,7 @@ function makeGifCards(gifs) {
     //making a header
     let newHeader = document.createElement("h3");
     newHeader.innerHTML = "Check out these GIFs:";
+    newHeader.setAttribute("class", "content_headers");
     document.getElementById("display_gif").appendChild(newHeader);
 
     for (i = 0; i < gifs.length; i++) {
@@ -101,6 +102,7 @@ function makeGifCards(gifs) {
 function makeMovieCards(movies) {
     //making a header for movie cards
     let newHeader = document.createElement("h3");
+    newHeader.setAttribute("class", "content_headers");
     newHeader.innerHTML = "Check out these movies:";
     document.getElementById("display_content").appendChild(newHeader);
 
