@@ -9,17 +9,36 @@
     <title>Movies and Gifs</title>
 </head>
 <body>
-    <h1>Movies and gifs by keyword</h1>
-    <form id = "my_form" action="submit">
-     <input id="user_input" type="text" placeholder="Enter a movie or a gif here">
-     <button id="create_card_btn" type="submit">Make card</button>
-    </form>
-    <div id= "display_card">
-    </div>
+   <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Movies and gifs by keyword</h1>
+        </div>
+   </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <form id = "my_form" action="submit">
+                    <input id="user_input" type="text" placeholder="Enter a movie or a gif here">
+                    <button id="create_card_btn" type="submit">Make card</button>
+                </form>
+                <div id= "display_card">
+                </div>
+            </div>
+            <div class="col-4">
+                <div id = "display_content">
+                </div>
+            </div>
+            <div class="col-4">
+                <div id="display_gif">
 
-    <div id = "display_content">
-
+                </div>
+            </div>
+        </div>
     </div>
+    
+
+
     <script src="script.js"></script> 
 </body>
 </html>
