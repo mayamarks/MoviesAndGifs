@@ -64,6 +64,11 @@ function findGifs(event, gifTitle) {
 
 //use and array of gifs and create gif cards
 function makeGifCards(gifs) {
+    //making a header
+    let newHeader = document.createElement("h3");
+    newHeader.innerHTML = "Check out these GIFs:";
+    document.getElementById("display_gif").appendChild(newHeader);
+
     for (i = 0; i < gifs.length; i++) {
          //make a card
          let newCard = document.createElement("div");
@@ -87,13 +92,18 @@ function makeGifCards(gifs) {
          newTitle.innerHTML = `${gifs[i].title}`
          newBody.appendChild(newTitle);
  
-         document.getElementById("display_content").appendChild(newCard);
+         document.getElementById("display_gif").appendChild(newCard);
     
          }
     } 
 
 //use array of movies and create movie cards
 function makeMovieCards(movies) {
+    //making a header for movie cards
+    let newHeader = document.createElement("h3");
+    newHeader.innerHTML = "Check out these movies:";
+    document.getElementById("display_content").appendChild(newHeader);
+
     for (i = 0; i < movies.length; i++) {
 
         //make a card

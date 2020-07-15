@@ -1,0 +1,9 @@
+body, html {
+    background-image: url("./resources/better-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    filter: grayscale(50%);
+
+}
